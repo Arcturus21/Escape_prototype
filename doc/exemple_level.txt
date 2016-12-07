@@ -1,0 +1,42 @@
+<Level>
+	<Texture> ///Liste des textures utilisées dans le niveau -> stocké dans un vector
+		may.png				///Le premier est toujours celui du joueur
+		sprite_depart.png	///les deux suivants ceux du débuts et de la fin
+		sprite_arrivee.png
+	<Texture>
+	<Map>
+		map: escapeMap3
+	<Map>
+	<Sprite>
+		<joueur>
+			spriteJoueur(file,indtexture): spriteMay.txt 0 ///Le premier sprite est TOUJOURS le joueur (mais correspond à l'indice 2 du tableau de sprite)
+		<joueur>
+		<limites>
+			spriteCheckpoint.txt 1	///depart
+			spriteCheckpoint.txt 2///arrivee
+		<limites>
+		<crashturn>
+			spriteSuiveur1(file,indtexture,couleur): spriteMay.txt 0 red
+		<crashturn>
+	<Sprite>
+	<Particle>
+		particle1(type,nb,linked,indicespritelinked(-1pourLeJoueur),color): quad 400 1 -1 white 
+		particle1(type,nb,linked,indicespritelinked,color): quad 400 1 0 black
+		particle3(type,nb,linked,pos,color): point 400 0 400 800 red -> nécessite de créer un vector de pointeur de particule
+	<Particle>
+	<Checkpoint>
+		generateur(type): gencrashturn
+		<modele>
+			spriteSuiveur1(file,indtexture,couleur): spriteMay.txt 0 red
+		<modele>
+		<particle>
+			particle1(type,nb,linked,indicespritelinked,color): quad 400 1 0 black
+		<particle> (pos,nbMonstre) 1200 800 10
+	<Checkpoint>
+	<Script>
+		///Construction script
+	<Script>
+	<Music>
+		musique.ogg
+	<Music>
+<Level>

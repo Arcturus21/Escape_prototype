@@ -1,0 +1,37 @@
+<Map>
+	<Tileset>
+		tileset: tileset2.png
+		dimensions(tiles): 2 1
+		dimensions(pixels): 50 50
+		tile1: 0
+		tile2: 1
+	<Tileset>
+	
+	<MapProp>
+		tileDimension(ingame): 200 200
+		mapDimension(tile): 16 12
+		nbCouche: 1
+		couchePerso: 1
+		schema:
+		1 1 1 1 1 1 1 1 1 1 1 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		0 0 0 0 0 0 0 0 0 0 0 1 
+		0 0 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 0 0 0 0 0 0 0 0 0 1 
+		1 1 1 1 1 1 1 1 1 1 1 1 
+	<MapProp>
+	<Autre>
+		depart(posTile): 12 10
+		arrivee(posTile): 8 0
+	<Autre>
+<Map>

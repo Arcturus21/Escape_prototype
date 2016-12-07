@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Escape" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Escape" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="E:/Program Files (x86)/Dropbox/Dropbox/developpement kit/SFML/v1/SFML-2.3.2/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-audio-d" />
+					<Add option="-lsfml-graphics-d" />
+					<Add option="-lsfml-window-d" />
+					<Add option="-lsfml-system-d" />
+					<Add directory="E:/Program Files (x86)/Dropbox/Dropbox/developpement kit/SFML/v1/SFML-2.3.2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Escape" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="E:/Program Files (x86)/Dropbox/Dropbox/developpement kit/SFML/v1/SFML-2.3.2/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lsfml-audio" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-system" />
+					<Add directory="E:/Program Files (x86)/Dropbox/Dropbox/developpement kit/SFML/v1/SFML-2.3.2/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DSFML_DYNAMIC" />
+			<Add directory="../../../SFML/v1/SFML-2.3.2/include" />
+			<Add directory="../SFML/v1/SFML-2.3.2/include" />
+			<Add directory="E:/Program Files (x86)/Python/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lsfml-audio" />
+			<Add option="-lsfml-graphics" />
+			<Add option="-lsfml-window" />
+			<Add option="-lsfml-system" />
+			<Add directory="../SFML/v1/SFML-2.3.2/lib" />
+			<Add directory="../../../SFML/v1/SFML-2.3.2/lib" />
+			<Add directory="E:/Program Files (x86)/Python/libs" />
+		</Linker>
+		<Unit filename="include/AStar.h" />
+		<Unit filename="include/AdvancedParticleSystem.h" />
+		<Unit filename="include/AnimatedSprite.h" />
+		<Unit filename="include/Animation.h" />
+		<Unit filename="include/CharacterSprite.h" />
+		<Unit filename="include/Checkpoint.h" />
+		<Unit filename="include/CrashTurn.h" />
+		<Unit filename="include/GenerateurMonstre.h" />
+		<Unit filename="include/Level.h" />
+		<Unit filename="include/LinkedParticleSystem.h" />
+		<Unit filename="include/Particle.h" />
+		<Unit filename="include/ParticleSystem.h" />
+		<Unit filename="include/PersonnalizedSprite.h" />
+		<Unit filename="include/Salle.h" />
+		<Unit filename="include/SalleTileMap.h" />
+		<Unit filename="include/TileMap.h" />
+		<Unit filename="include/TileProp.h" />
+		<Unit filename="include/Updatable.h" />
+		<Unit filename="include/util.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AStar.cpp" />
+		<Unit filename="src/AdvancedParticleSystem.cpp" />
+		<Unit filename="src/AnimatedSprite.cpp" />
+		<Unit filename="src/Animation.cpp" />
+		<Unit filename="src/CharacterSprite.cpp" />
+		<Unit filename="src/Checkpoint.cpp" />
+		<Unit filename="src/CrashTurn.cpp" />
+		<Unit filename="src/GenerateurMonstre.cpp" />
+		<Unit filename="src/Level.cpp" />
+		<Unit filename="src/LinkedParticleSystem.cpp" />
+		<Unit filename="src/Particle.cpp" />
+		<Unit filename="src/ParticleSystem.cpp" />
+		<Unit filename="src/PersonnalizedSprite.cpp" />
+		<Unit filename="src/Salle.cpp" />
+		<Unit filename="src/SalleTileMap.cpp" />
+		<Unit filename="src/TileMap.cpp" />
+		<Unit filename="src/TileProp.cpp" />
+		<Unit filename="src/Updatable.cpp" />
+		<Unit filename="src/util.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
